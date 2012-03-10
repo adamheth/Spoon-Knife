@@ -10,23 +10,26 @@
       margin:0px;
       padding:0px;
     }
-    
-    .container {
-    background-color: #FFFFF5;
-    background-image: -moz-linear-gradient(#fffff5,#f5f3b4);
-    background-image: -webkit-linear-gradient(#fffff5,#f5f3b4);
-    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#fffff5',endColorstr='#f5f3b4')";
-    
-    
-    width: 100%;
-    height: 215px;
-    
+    .banner-wrapper {
+      background-color: #FFFFF5;
+      background-image: -moz-linear-gradient(#f5f3b4,#fffff5);
+      background-image: -webkit-linear-gradient(#f5f3b4,#fffff5);
+      -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#f5f3b4',endColorstr='#fffff5')";
+      width: 100%;
+      height: 400px;
     }
-    
-    #octocat {
-      display: block;
+    .content {
+      background-color: white;
+      max-width: 1140px;
+      height: auto;
+      padding: 50px;
+      margin: auto;
+      box-shadow: -0px -6px 18px rgba(0,0,0,0.05);
+    }
+    .octocat {
       width:384px;
-      margin: 50px auto;
+      margin: 0 auto;
+      padding:  50px 0px 30px 0px;
     }
     
     p {
@@ -43,6 +46,8 @@
       -moz-box-shadow: -5px 10px 15px gray;
       font-family: sans-serif;
       color: #03CEFC;
+    }
+    
     }
     
   </style>
@@ -63,17 +68,27 @@
 
 <body>
   
-<div class="container">
+  <div class="banner-wrapper">
+  
+    <div class="octocat">
+      <img src="forkit.gif">
+    <div>
+  
+    <div id="rainbow-message" style="display:none">Double repositories all the way across the sky!<br/>
+      <a href="http://help.github.com/fork-a-repo/">What does it mean?</a>
+    </div>
 
-<img src="forkit.gif" id="octocat" alt="" />
+  </div>
+  </div>
+  
+    <div class="content">
+      <p>
+        Fork me? No, fork you!
+      </p>
+    <div>
+      
+  </div>
+    
 
-<p>
-  Fork me? No, fork you!
-</p>
-<div id="rainbow-message" style="display:none">
-Double repositories all the way across the sky!<br/>
-<a href="http://help.github.com/fork-a-repo/">What does it mean?</a>
-</div>
-</div>
 </body>
 </html>
